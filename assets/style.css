@@ -1,45 +1,132 @@
-:root {
-  --accent: #0a66c2;
-  --text: #111;
-  --bg: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: system-ui, sans-serif;
-  
-  /* --- MARGIN & WIDTH SETTINGS --- */
-  /* Decrease this number (e.g., 600px) for LARGER side margins */
-  /* Increase this number (e.g., 1000px) for SMALLER side margins */
-  max-width: 1200px; 
-  
-  /* 40px is the Top/Bottom margin. 'auto' creates equal Left/Right margins */
-  margin: 40px auto; 
-  
-  padding: 0 20px;
+  background: #ffffff;
+  color: #111111;
+  font-family: 'Inter', system-ui, sans-serif;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+  line-height: 1.6;
 }
 
-h1, h2 {
-  font-weight: 550;
-  margin-bottom: 10px;
+/* ── Header ── */
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 0 40px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 52px;
+  gap: 16px;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
+.site-header img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
 }
 
-a:hover {
-  text-decoration: underline;
+.site-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  text-align: center;
+  line-height: 1.3;
 }
 
-ul {
-  padding-left: 20px;
+.site-header .tagline {
+  font-size: 0.95rem;
+  color: #666666;
+  text-align: center;
+}
+
+/* ── Section label ── */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+/* ── Talk cards ── */
+.talk-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: #e2e2e2;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.talk-list li {
+  background: #ffffff;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.talk-date {
+  font-size: 0.82rem;
+  color: #888888;
   line-height: 1.5;
 }
 
+.talk-date strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #333333;
+  font-weight: 600;
+}
+
+.talk-info .talk-title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 4px;
+}
+
+.talk-info .talk-speaker {
+  font-size: 0.83rem;
+  color: #777777;
+}
+
+.slides-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111111;
+  border: 1px solid #cccccc;
+  padding: 6px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.slides-link:hover {
+  background: #f5f5f5;
+  text-decoration: none;
+}
+
+/* ── Footer ── */
 footer {
-  margin-top: 40px;
-  color: #555;
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e2e2;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #aaaaaa;
+  letter-spacing: 0.3px;
 }
