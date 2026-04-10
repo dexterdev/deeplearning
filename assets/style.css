@@ -88,6 +88,11 @@ body {
   .talk-date {
     grid-column: 1 / -1;
   }
+  
+  .slides-link {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
 }
 
 .talk-date {
