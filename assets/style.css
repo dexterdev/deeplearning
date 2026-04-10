@@ -78,6 +78,13 @@ body {
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .talk-list li {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
 .talk-date {
   font-size: 0.82rem;
   color: #888888;
@@ -99,8 +106,9 @@ body {
 }
 
 .talk-info .talk-speaker {
-  font-size: 0.83rem;
-  color: #777777;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #555555;
 }
 
 .slides-link {
