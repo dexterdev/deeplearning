@@ -80,8 +80,13 @@ body {
 
 @media (max-width: 768px) {
   .talk-list li {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
     gap: 12px;
+    padding: 18px 16px;
+  }
+  
+  .talk-date {
+    grid-column: 1 / -1;
   }
 }
 
